@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NETFLIX CLONE</title>
+	<link rel="stylesheet" href="./style/main.css">
+	<link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css">
+	<link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo" href="">NETFLIX</h2>
+			<nav class="desktop">
+				<a href="#">Início</a>
+				<a href="#">Series</a>
+				<a href="#">Filmes</a>
+				<a href="#">Mais recentes</a>
+				<a href="#">Minha lista</a>
+			</nav>
+			<select class="mobile">
+				<option>Início</option>
+				<option>Series</option>
+				<option>Filmes</option>
+				<option>recentes</option>
+				<option>Minha lista</option>
+			</select>
+		</div>
+
+		<div class="container">
+			<nav class="desktop">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#">INFANTIL</a>
+				<a href="#"><i class="far fa-gift"></i></a>
+				<a href="#"><i class="fas fa-bell"></i></a>
+				<a href="#">foto</a>
+			</nav>
+			<nav class="mobile">
+
+				<a href="#"><i class="far fa-gift"></i></a>
+				<a href="#"><i class="fas fa-bell"></i></a>
+
+			</nav>
+
+
+		</div>
+	</header>
+	<main>
+		<div class="filme-principal">
+			<div class="container">
+				<h3 class="titulo"> Titulo</h3>
+				<p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor sapien id
+					diam dignissim tincidunt. Etiam nulla
+					metus, tristique quis convallis vitae, accumsan eget massa. Donec non ipsum sit amet lorem sodales
+					pharetra.
+					<button class="assistir button"><i class="fas fa-play"></i> Assistir</button>
+					<button class="info button"><i class="fal fa-info-circle"></i> Mais Informaçoes</button>
+			</div>
+
+		</div>
+
+
+	</main>
+	<div class="carrosels">
+
+
+		<div class="item-carrosel">
+			<h4 class="categoria">categoria</h4>
+			<div class="carrosel">
+
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<h4>1</h4>
+					</div>
+					<div class="item">
+						<h4>2</h4>
+					</div>
+					<div class="item">
+						<h4>3</h4>
+					</div>
+					<div class="item">
+						<h4>4</h4>
+					</div>
+					<div class="item">
+						<h4>5</h4>
+					</div>
+					<div class="item">
+						<h4>6</h4>
+					</div>
+					<div class="item">
+						<h4>7</h4>
+					</div>
+					<div class="item">
+						<h4>8</h4>
+					</div>
+					<div class="item">
+						<h4>9</h4>
+					</div>
+					<div class="item">
+						<h4>10</h4>
+					</div>
+					<div class="item">
+						<h4>11</h4>
+					</div>
+					<div class="item">
+						<h4>12</h4>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="./js/owl/jquery.min.js"></script>
+	<script src="./js/owl/owl.carousel.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 5
+				}
+			}
+		})
+	</script>
+</body>
+
+</html>

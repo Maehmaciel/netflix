@@ -1,0 +1,167 @@
+
+:root{
+	--preto:#000;
+	--branco:#FFF;
+	--buttonTransparent:rgba(109,109,110,0.7);
+	--blackBackground:#141414;
+	--vermelho:#e50914;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--branco);
+}
+
+body{
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	min-height: 100vh;
+	background-color: var(--blackBackground);
+}
+button,a{
+	cursor: pointer;
+}
+header {
+	/* background-color: rgb(20, 20, 20); */
+	background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	padding: 0px 40px;
+}
+
+	.mobile{
+		display: none;
+	}
+header .container{
+	display: flex;
+	align-items: center;
+}
+header .container:nth-child(1) a{
+	color:#AAA; /* quando desativado */
+	margin-left: 18px;
+	font-size: 12px;
+}
+header .container:nth-child(1) a:hover{
+	color:var(--branco); /* quando desativado */
+	
+}
+.logo{
+	color: var(--vermelho);
+	font-size: 30px;
+	font-weight: bold;
+	
+
+}
+header .container:nth-child(2) a{
+	color:var(--branco); /* quando desativado */
+	margin-right: 18px;
+	font-size: 20px;
+}
+
+.filme-principal{
+	font-size: 16px;
+	height: 800px;
+	background: linear-gradient(to bottom,rgba(0,0,0,0.1), #141414 100%), url('../img/capa.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	
+}
+.filme-principal .container{
+	margin: 40px;
+	max-width: 50vw;
+
+	
+}
+.filme-principal .container .titulo{
+	font-size: 45px;
+	
+}
+.filme-principal .container .descricao{
+	font-size: 20px;
+	margin: 10% 0px;
+	
+}
+.filme-principal .button{
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 4px;
+	margin: 10px 0px 10px 10px;
+	transition: .3s ease all;
+	margin: 10px;
+	
+}
+.filme-principal .container .assistir{
+	background-color: var(--branco);
+	color: var(--preto);
+	
+}
+.fa-play{
+	color: var(--preto);
+	
+}
+.filme-principal .container .info{
+	background-color: var(--buttonTransparent);
+	
+}
+.filme-principal .container .assistir:hover{
+	background-color: rgba(255,255,255,0.5);
+	
+	
+}
+.filme-principal .container .info:hover{
+	background-color: rgba(109,109,110,0.4);;
+	
+	
+}
+.button i{
+	margin: 0px 5px;
+}
+.carrosels{
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+	position: absolute;
+	top: 700px;
+	overflow: hidden;
+	margin-right: 20px;
+	
+}
+
+.carrosel{
+	width: 97vw;
+	
+
+	margin-bottom:15px ;
+}
+
+
+
+.carrosels .item-carrosel .categoria{
+	font-size: 35px;
+	margin-bottom: 8px;
+	position: relative;
+	
+}
+
+.item{
+	background-color: var(--vermelho);
+	height: 350px;
+	
+}
+
