@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="header">
 		<div class="container">
 			<h2 class="logo" href="">NETFLIX</h2>
 			<nav class="desktop">
@@ -58,8 +58,11 @@
 					diam dignissim tincidunt. Etiam nulla
 					metus, tristique quis convallis vitae, accumsan eget massa. Donec non ipsum sit amet lorem sodales
 					pharetra.
+				<div>
 					<button class="assistir button"><i class="fas fa-play"></i> Assistir</button>
 					<button class="info button"><i class="fal fa-info-circle"></i> Mais Informaçoes</button>
+				</div>
+
 			</div>
 
 		</div>
@@ -118,24 +121,7 @@
 	</div>
 	<script src="./js/owl/jquery.min.js"></script>
 	<script src="./js/owl/owl.carousel.min.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 20,
-			nav: true,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 3
-				},
-				1000: {
-					items: 5
-				}
-			}
-		})
-	</script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
